@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* CSS Document */
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+textarea
+{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #333;
+    width: 100%;
+    padding: 3px;
+    font-family: sans-serif;
+}
+textarea{
+    min-height: 150px;
+}
+.err-mess{
+    background-color: #fad8d8;
+    color: #d72525;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+.err-mess__ttl{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.err-mess__list li{
+    line-height: 1.6;
+}
+/*****************************************
+*タブレットでの指定
+******************************************/
+@media screen and (min-width:600px) {
+
+}
+/*****************************************
+*PC
+******************************************/
+@media screen and (min-width:960px) {
+
+}

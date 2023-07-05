@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Lato*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/*Roboto Condensed*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*noto-sans*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&subset=japanese');
+/*noto-serif*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:200,300,400,500,600,700,900&subset=japanese');
+/*Oswald*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+.ff-lato{
+	font-family: 'Lato', sans-serif;
+}
+.ff-roboto-condensend{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.ff-roboto{
+	font-family: 'Roboto', sans-serif;
+}
+.ff-noto-sans{
+	font-family: 'Noto Sans JP', sans-serif;
+}
+.ff-noto-serif{
+	font-family: 'Noto Serif JP', sans-serif;
+}
+.ff-oswald{
+	font-family: 'Oswald', sans-serif;
+}
