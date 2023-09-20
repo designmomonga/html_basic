@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+/* CSS Document */
+/*****************************************
+*スマートフォン
+******************************************/
+/*
+*初期設定
+-----------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	font-weight: 500;
+}
+
+body {
+	font-size: 1.3rem;
+	color: #333;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style-type: none;
+}
+
+:root {
+	/*color*/
+	--gray01: #f2f2f2;
+	--gray02: #ccc;
+	--gray03: #999;
+	--colorCaution: #e61a2d;
+	--colorWinRed: #bd1717;
+	/*header,footerの高さ*/
+	--sp_header_height: 60px;
+	--sp_footer_height: 60px;
+	--pc_header_height: 80px;
+	--pc_footer_height: 80px;
+}
+
+.contents {
+	min-height: calc(100vh - (var(--sp_header_height) + var(--sp_footer_height)));
+	padding: 30px 0;
+}
+
+.inner {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: var(--gray01);
+}
+
+.header__inner {
+	min-height: var(--sp_header_height);
+}
+
+.header__logo {
+	min-height: inherit;
+	display: flex;
+	align-items: center;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+.contact-form{
+	margin-top: 15px;
+}
+.footer {
+	background-color: var(--gray01);
+}
+
+.footer__inner {
+	min-height: var(--sp_footer_height);
+}
+
+.footer__copy-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: inherit;
+}
+
+/*****************************************
+*タブレットでの指定
+******************************************/
+@media screen and (min-width:600px) {
+	body {
+		font-size: 1.4rem;
+	}
+}
+
+/*****************************************
+*PC
+******************************************/
+@media screen and (min-width:960px) {
+	body {
+		font-size: 1.6rem;
+	}
+
+	.contents {
+		min-height: calc(100vh - (var(--pc_header_height) + var(--pc_footer_height)));
+	}
+
+	.inner {
+		max-width: 1120px;
+		margin: 0 auto;
+	}
+
+	.header__inner {
+		min-height: var(--pc_header_height);
+	}
+
+	.footer__inner {
+		min-height: var(--pc_footer_height);
+	}
+
+	.header__logo {
+		font-size: 2rem;
+	}
+}
